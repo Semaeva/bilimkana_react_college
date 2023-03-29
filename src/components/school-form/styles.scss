@@ -1,0 +1,36 @@
+.school-form {
+  max-width: 685px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h3 {
+    padding-bottom: 60px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  .input-box {
+    padding: 0 75px 20px;
+  }
+  button {
+    margin-top: 50px;
+    max-width: 204px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    background: var(--primary-orange);
+    padding: 8px 0;
+    border: 2px solid #EC591C;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}

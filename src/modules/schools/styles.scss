@@ -1,0 +1,10 @@
+.our-schools{
+  padding-top: 180px;
+  padding-bottom: 150px;
+  &>div {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+}

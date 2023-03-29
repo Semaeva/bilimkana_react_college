@@ -1,0 +1,43 @@
+.about-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 33px;
+  gap: 16px;
+  height: 230px;
+  width: 373px;
+  //min-width: 350px;
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(309.69deg, #4D84E7 3.86%, #82AFF4 96.14%);
+    span {
+      font-family: 'Roboto', sans-serif;
+      font-size: 32px;
+      font-variant: all-small-caps;
+      font-style: normal;
+      color: white;
+      font-weight: bold;
+
+    }
+  }
+   b {
+     text-align: center;
+     font-size: 20px;
+     font-weight: 600;
+     text-transform: uppercase;
+
+   }
+
+  background: #FFFFFF;
+  /* Maine shadow */
+
+  box-shadow: 0 2px 16px rgba(35, 57, 116, 0.1);
+  border-radius: 30px;
+}

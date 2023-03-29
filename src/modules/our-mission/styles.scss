@@ -1,0 +1,29 @@
+.our-mission {
+  padding-top: 180px; //TODO: need to change by figma
+  padding-bottom: 40px;
+
+ &_text {
+  h3 {
+    font-size: 24px;
+    max-width: 685px;
+    text-transform: uppercase;
+  }
+   p {
+     white-space: pre-wrap;
+     margin-top: 60px;
+     font-size: 24px;
+   }
+ }
+  &_img-wrapper {
+    position: relative;
+    width: 392px;
+  height: 450px;
+    flex-shrink: 0;
+    img  {
+      position: absolute;
+      right: -118px;
+      bottom: 0;
+    }
+  }
+
+}

@@ -1,0 +1,42 @@
+.contacts {
+padding-top: 180px;
+  footer {
+    background: linear-gradient(90deg, #309CB6 0%, #31317A 100%);
+    width: 100%;
+    padding: 100px 0;
+    .footer_box {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      &> span {
+        width: 300px;
+        flex-shrink: 0;
+        //font-family: 'Montserrat';
+        //font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        //line-height: 29px;
+        text-transform: uppercase;
+        &> span {
+          font-weight: 700;
+        }
+
+        color: #FFFFFF;
+      }
+      .footer_element {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        max-width: 190px;
+        h4 {
+          text-transform: uppercase;
+        }
+        * {
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

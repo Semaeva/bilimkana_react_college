@@ -1,0 +1,31 @@
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  label  {
+    padding-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #878787;
+  }
+  .input {
+    background: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+
+    min-height: 46px;
+    padding: 10px 15px;
+    border: 1px solid #E1E1E1;
+    border-radius: 8px;
+     &::placeholder {
+       font-family: 'Roboto', sans-serif;
+
+       opacity: 0.5;
+     }
+    &.invalid {
+      border-color: red;
+    }
+  }
+}

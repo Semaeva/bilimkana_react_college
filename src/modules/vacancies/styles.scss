@@ -1,0 +1,73 @@
+.vacancies_wrapper {
+  height: 100vh;
+  overflow: scroll;
+  h3 {
+    padding: 180px 0 50px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .vacancy_btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+    button {
+      min-height: 46px;
+      width: 100%;
+      max-width: 300px;
+      color: var(--primary-blue);
+      border: 2px solid var(--primary-blue);
+      border-radius: 10px;
+      font-style: normal;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 24px;
+      transition: 0.3s all;
+      &.active {
+        background-color: var(--primary-orange);
+        border-color: var(--primary-orange);
+        color: white;
+      }
+    }
+  }
+  .vacancies-box {
+    max-height: 500px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px 50px;
+    .vacancy {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .circle {
+        background-color: var(--primary-orange);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+      }
+      p {
+        cursor: pointer;
+      }
+    }
+  }
+  .back-button {
+    min-height: 46px;
+    width: 300px;
+    border: 2px solid var(--primary-orange);
+    border-radius: 10px;
+    background-color: var(--primary-orange);
+    font-style: normal;
+    cursor: pointer;
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+    transition: 0.3s all;
+  margin-bottom: 100px;
+  }
+
+}

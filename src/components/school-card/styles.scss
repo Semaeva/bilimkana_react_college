@@ -1,0 +1,58 @@
+.school-card {
+  width: 100%;
+  min-height: 265px;
+  background: linear-gradient(90deg, #F4B870 0%, #F08A63 100%);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  .school-title {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    h3 {
+      font-weight: 600;
+      font-size: 28px;
+    }
+  }
+  .school-info {
+    padding-left: 74px;
+    &_element {
+      padding-top: 18px;
+      display: flex;
+      gap: 5px;
+    }
+  }
+  .school-buttons {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    button {
+      width: 240px;
+      cursor: pointer;
+      height: 50px;
+      font-size: 24px;
+      font-weight: 500;
+      border-radius: 16px;
+      border: 2px solid var(--primary-blue);
+      background: transparent;
+      color: var(--primary-blue);
+      transition: 0.4s all;
+      &:hover {
+        background: var(--primary-blue);
+        color: white;
+      }
+      &.over {
+        color: white;
+        background: var(--primary-blue);
+          &:hover {
+            background: #081B4DFF;
+          }
+      }
+    }
+  }
+}

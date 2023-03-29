@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --primary-orange : #EC591C;
+  --primary-blue: #233974;
+  --secondary: #9F9FA1;
+  --light: #E1E1E1;
+  --main-bg: #EEF2F2;
+}
+
+* {
+
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*:focus,
+*:focus-visible {
+  outline: none !important;
+}
+
+html,
+body {
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 18px;
+  max-width: 100vw;
+  color: var(--primary-blue)
+}
+body {
+  background-color: var(--main-bg);
+
+}
+main {
+  &::-webkit-scrollbar {
+    display: none !important;
+  }
+}
+section {
+  position: inherit;
+  z-index: 4 ;
+  min-height: 101vh;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+a {
+  text-decoration: none;
+  outline: none !important;
+}
+nav {
+  *{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 500 !important;
+  color: var(--secondary);
+  text-transform: uppercase !important;
+  }
+}
+h1, h2 , h3, h4, h5, h6, span {
+  font-family: 'Montserrat', sans-serif;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+    text-align: center;
+    color: var(--primary-orange);
+    padding-bottom: 100px;
+
+}
+p, button {
+  font-family: 'Inter', sans-serif;
+}
+p, span {
+  font-weight: 400;
+}
+button {
+  font-weight: 500;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+  @media (max-width: 1270px) {
+    max-width: 876px;
+  }
+}
+.light-circle {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+}
+.grey-circle-up {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.grey-circle-down {
+  position: fixed;
+  z-index: -1;
+  top: 500px;
+  right: 0;
+}
